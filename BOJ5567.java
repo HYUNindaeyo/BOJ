@@ -44,9 +44,9 @@ public class BOJ5567{
 				if (count < 2) {invite[i] = true;}
 				else return;
 				count++;
-				System.out.println("dfs 실행"+x+"줄 진");
+				//System.out.println("dfs 실행"+x+"줄 진");
 				dfs(i,count);
-				System.out.println("dfs 탈"+x+"줄 진");
+				//System.out.println("dfs 탈"+x+"줄 진");
 				count--;
 			}
 		}
