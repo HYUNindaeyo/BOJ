@@ -17,20 +17,21 @@ public class BOJ11561 {
 		}
 	}
 	static long binarysearch(long num) {
-		long left = 0;
-		long right = num;
+		long left = 1;
+		long right = 200000000l;;
 		long result = 0;
 		if (num == 1) {
 			result = 1; 
 			return result;
 			}
 		while (left<=right) {
-			long mid = (left+right+1)/2;
+			long mid = (left+right)/2;
 			//System.out.println(mid+"mid 결과 출");
-			long sum = (1+mid)*mid/2;
-			
- 			if (sum<= num)	left = mid+1; 
+			long sum = ((1+mid)*mid)/2;
+			//System.out.println(sum+"sum 결과 출");
+ 			if (sum< num)	left = mid+1; 
  			else if (sum>num) right = mid -1;
+ 			else if (sum==num) {right = mid; break;}
 		}
 		return right;
 	}
