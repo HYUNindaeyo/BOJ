@@ -37,8 +37,8 @@ public class BOJ2178 {
 	}
 	public static void bfs(int x,int y) {
        //System.out.printf("bfs ");
-		int count = 0;
-		int Max = 0;
+		//int count = 0;
+		//int Max = 0;
 		Queue<Location> queue = new LinkedList<>();
 		queue.add(new Location(0,0));
 		visited[0][0] = true;
