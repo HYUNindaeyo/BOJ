@@ -1,5 +1,4 @@
 package 백준공부;
-
 import java.util.*;
 
 public class BOJ2178 {
