@@ -11,14 +11,14 @@ public class BOJ10816 {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		N = scan.nextInt();
-		cardNum = new int[N];
+		cardNum = new int[N+1];
 		for (int i=0;i<N;i++) {
 			cardNum[i] = scan.nextInt();
 		}
 		Arrays.sort(cardNum);
 		M = scan.nextInt();
-		CardToCount = new int[M];
-		IndexOfCard = new int[M];
+		CardToCount = new int[M+1];
+		IndexOfCard = new int[M+1];
 		for (int i=0;i<M;i++) {
 			CardToCount[i] = scan.nextInt();
 			binarySearch1(i,CardToCount[i]);
@@ -121,3 +121,36 @@ public class BOJ10816 {
 	}
 	
 	*/
+
+//짜증나는  이분탐색으로 풀면 자바에서는 시간 초과 나옴 ^^
+//이 문제를 메모이제이션으로 풀라고 한다니 초기의도와는 다를듯 ㅎ
+//코드는 인터넷에서 참고하였다. 
+/*
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+ 
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int[] cnt = new int[20_000_001];
+        
+        for(int i = 0; i < n; i++) {
+            cnt[Integer.parseInt(st.nextToken()) + 10_000_000]++;
+        }
+        
+        int m = Integer.parseInt(br.readLine());
+        st = new StringTokenizer(br.readLine());
+        StringBuffer sb = new StringBuffer();
+        
+        for(int i = 0; i < m; i++) {
+            sb.append(cnt[Integer.parseInt(st.nextToken()) + 10_000_000] + " ");
+        }
+        
+        System.out.println(sb);
+    }
+}
+
+*/
