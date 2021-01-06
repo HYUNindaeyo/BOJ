@@ -9,7 +9,7 @@ public class BOJ4172 {
 		Scanner scan = new Scanner(System.in);
 		int[] DP = new int[1000001];
 		DP[0] = 1;
-			for (int i= 1; i<=1000000;i++) {
+			for (int i= 1; i<1000000;i++) {
 				//System.out.println("i	" + i);
 				//int sqrt = DP[(int) Math.floor(i-Math.sqrt(i))];
 				int sqrt = (int)(i-Math.sqrt(i));
