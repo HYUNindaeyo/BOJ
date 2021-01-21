@@ -6,7 +6,6 @@ public class BOJ1464 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<String> list =new  ArrayList<String>();
 		Scanner scan = new Scanner(System.in);
 		String S = scan.next();
 		int count = S.length();
