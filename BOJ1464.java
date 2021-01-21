@@ -1,7 +1,6 @@
 package 백준공부;
 
 import java.util.*;
-
 public class BOJ1464 {
 	
 	public static void main(String[] args) {
